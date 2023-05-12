@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  bind9:
+    container_name: localdns
+    image: ubuntu/bind9:latest
+    environment:
+      - BIND9_USER=root
+      - TZ=Asia/Kolkata
+    networks:
+      dnsnet:
+        ipv4_address: 172.100.100.100
+    volumes:
+      - ./config:/etc/bind
+      - ./cache:/var/cache/bind
+      - ./records:/var/lib/bind
+
+networks:
+  dnsnet:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.100.0.0/16

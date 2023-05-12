@@ -1,0 +1,26 @@
+$TTL 2d
+
+
+
+$ORIGIN srikanthk.net.
+
+
+@                   IN                  SOA                 ns.srikanthk.net.      info.srikanthk.net (
+                                                                                    2023122800  ; serial
+                                                                                    12h         ; refresh
+                                                                                    15m         ; retry
+                                                                                    3w          ; expire
+                                                                                    2h          ; minimum ttl
+                                                                                    )
+                    IN                  NS                  ns.srikanthk.net.
+
+
+ns                  IN                  A                  172.100.100.100
+
+
+
+; -- custom dns records
+
+
+argocd              IN                  A                   10.43.119.80
+tekton              IN                  A                   10.43.182.111
