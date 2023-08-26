@@ -2,28 +2,16 @@ $TTL 2d
 
 
 
-$ORIGIN srikanthk.net.
+$ORIGIN aws.
 
 
-@                   IN                  SOA                 ns.srikanthk.net.      info.srikanthk.net (
+@                   IN                  SOA                 ns.aws.      info.aws (
                                                                                     2023122800  ; serial
                                                                                     12h         ; refresh
                                                                                     15m         ; retry
                                                                                     3w          ; expire
                                                                                     2h          ; minimum ttl
                                                                                     )
-                    IN                  NS                  ns.srikanthk.net.
-
-
+                    IN                  NS                  ns.aws.
 ns                  IN                  A                  172.100.100.100
-
-
-
-; -- custom dns records
-
-
-argocd              IN                  A                   10.43.201.142
-tekton              IN                  A                   10.43.182.111
-couchbase           IN                  A                   172.20.0.2
-pgadmin.srikanthk.net.             IN                  CNAME               pgadmin-postgres-srikanth-iyengar.cloud.okteto.net.
-github IN                  CNAME               srikanth-iyengar.github.io.
+@                   IN                  A                   9.9.9.9
