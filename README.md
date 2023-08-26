@@ -9,3 +9,7 @@ in your browser
 I am just trying to simply my life by just writing few zone files
 
 # Since this is not a important repo you will not find so many branches 󰘬
+
+## Follow this following steps to enjoy peace
+- ```bash make install```
+- ```bash make register-init``` which will start this bind9 container at your system start up
