@@ -22,5 +22,8 @@ ns                  IN                  A                  172.100.100.100
 ; -- custom dns records
 
 
-argocd              IN                  A                   10.43.119.80
+argocd              IN                  A                   10.43.201.142
 tekton              IN                  A                   10.43.182.111
+couchbase           IN                  A                   172.20.0.2
+pgadmin.srikanthk.net.             IN                  CNAME               pgadmin-postgres-srikanth-iyengar.cloud.okteto.net.
+github IN                  CNAME               srikanth-iyengar.github.io.
