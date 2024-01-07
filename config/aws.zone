@@ -13,5 +13,9 @@ $ORIGIN aws.
                                                                                     2h          ; minimum ttl
                                                                                     )
                     IN                  NS                  ns.aws.
-ns                  IN                  A                  172.100.100.100
+ns                  IN                  A                   172.100.100.100
 @                   IN                  A                   9.9.9.9
+2.12                IN                  PTR                 now.abcd.aws.
+2.13                IN                  PTR                 bb.abcde.aws.
+abcd                IN                  A                   172.30.12.2
+abcde               IN                  A                   172.30.13.2
